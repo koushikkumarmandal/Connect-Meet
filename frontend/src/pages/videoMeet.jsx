@@ -15,11 +15,10 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'; 
 import VisibilityIcon from '@mui/icons-material/Visibility'; 
+import server from '../environment';
 
 
-
-
-const server_url = "http://localhost:8000";
+const server_url = server;
 
 var connections = {};
 
