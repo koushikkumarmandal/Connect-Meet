@@ -520,26 +520,27 @@ export default function VideoMeetComponent() {
 
                     
                     {window.innerWidth <= 768 && (
-                        <button
-                            onClick={() => setShowControls(!showControls)}
-                            style={{
-                                position: 'fixed',
-                                bottom: showControls ? '90px' : '20px',
-                                left: '50%',
-                                transform: 'translateX(-50%)',
-                                zIndex: 25,
-                                padding: '6px 12px',
-                                borderRadius: '20px',
-                                background: 'rgba(0,0,0,0.6)',
-                                color: 'white',
-                                border: 'none',
-                                fontWeight: 'bold',
-                                cursor: 'pointer',
-                            }}
-                        >
-                            {showControls ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
+                            <button
+                                 onClick={() => setShowControls(!showControls)}
+                                 style={{
+                                    position: 'fixed',
+                                    bottom: '7px', 
+                                    left: '50%',
+                                    transform: 'translateX(-50%)',
+                                    zIndex: 25,
+                                    padding: '6px 12px',
+                                    borderRadius: '20px',
+                                    background: 'rgba(0,0,0,0.6)',
+                                    color: 'white',
+                                    border: 'none',
+                                    fontWeight: 'bold',
+                                    cursor: 'pointer',
+                                }}
+                            >
+                             {showControls ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
                         </button>
                     )}
+
 
 
 
