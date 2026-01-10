@@ -22,7 +22,10 @@ app.use("/api/v1/users", userRoutes);
 
 
 app.set("mongo_user")
-const connectionDb = await mongoose.connect("mongodb+srv://koushikmandal712122_db_user:tBqM5S9y5yBRgOKK@cluster0.83p4aan.mongodb.net/?appName=Cluster0");
+/*
+Give your own Db name and password
+const connectionDb = await mongoose.connect("mongodb+srv://db_user:tBqMKK@cluster0.83p4aan.mongodb.net/?appName=Cluster0");
+*/
 console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`);
 
 
